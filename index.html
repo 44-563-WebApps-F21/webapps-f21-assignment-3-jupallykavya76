@@ -89,6 +89,7 @@ vector<vector<int>> adj;
 vector<int> side(n, -1);
 bool is_bipartite = true;
 queue<int> q;
+    ```
 for (int st = 0; st < n; ++st) {
     if (side[st] == -1) {
         q.push(st);
@@ -102,6 +103,7 @@ for (int st = 0; st < n; ++st) {
                     q.push(u);
                 } else {
                     is_bipartite &= side[u] != side[v];
+                    ```
                 }
             }
         }
