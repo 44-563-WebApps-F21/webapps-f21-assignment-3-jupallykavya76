@@ -13,27 +13,26 @@
  by and lifting your head up, you can see hundreds of skyscrapers.New York City is the most populous city 
  in the United States, which makes it a very important <b>cultural and commercial center</b>cultural and 
  commercial center, to affect global trade directly, whether in culture, entertainment, fashion, commerce.
+</p>
 
  <hr>
 
  <h1>Directions from Maryville to New York</h1> 
  <ol>
      <li>Catch a directions of 1,500 miles from marryville to New York via flight</li> 
-     <li>catch a cab and go to the kansas airport(MCI)
+     <li>catch a cab and go to the kansas airport(MCI)</li>
  <ol>
      <li> take a flight from kansas to Newark(EWR)</li>
      <li> take all ur belongings and book a cab to New York which takes 20-25 min from airport</li>
  </ol>
  </li>
  <li> wait for the cab to arive </li>
- <li> Sit back and enjoy the lightning and mountain view 
+ <li> Sit back and enjoy the lightning and mountain view </li>
      <ol>
       <li> By listening to ur favourit music</li>
      <li>Finally we have reached our location yeyeye..!!</li>
  </ol>
- </li>
- </ol>
- 
+
  <ul>
      <li> Acessories- Camera,Laptop,Charger</li>
      <li> Drinks- ThumpsUp,7Up</li>
@@ -51,6 +50,7 @@
     </p>
 
     <table>
+    <table border='2'>
         <tr>
             <th> Food</th>
             <th> location</th>
@@ -89,22 +89,32 @@ vector<vector<int>> adj;
 vector<int> side(n, -1);
 bool is_bipartite = true;
 queue<int> q;
-    ```
-for (int st = 0; st < n; ++st) {
-    if (side[st] == -1) {
+for (int st = 0; st < n; ++st)
+ {
+    if (side[st] == -1)
+     {
+        <blockquote place =  "https://cp-algorithms.com/graph/bipartite-check.html">
+           
         q.push(st);
         side[st] = 0;
-        while (!q.empty()) {
+        while (!q.empty())
+         {
+            
             int v = q.front();
             q.pop();
-            for (int u : adj[v]) {
-                if (side[u] == -1) {
+            for (int u : adj[v])
+             {
+                if (side[u] == -1) 
+                {
                     side[u] = side[v] ^ 1;
                     q.push(u);
-                } else {
+                } 
+                else 
+                {
                     is_bipartite &= side[u] != side[v];
-                    ```
+                    
                 }
+            </blockquote>
             }
         }
     }
@@ -112,3 +122,5 @@ for (int st = 0; st < n; ++st) {
 
 cout << (is_bipartite ? "YES" : "NO") << endl;
 </pre>
+</body>
+</html>
