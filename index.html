@@ -3,6 +3,7 @@
 <title>My Self</title>
 </head>
 <body>
+    <a href="./bonus.html">BONUS</a>
 <h1>Jupally Kavya</h1>
 <h6>New York</h6>
 <p>
@@ -39,7 +40,7 @@
      <li>Snacks- Biscuits</li>
  </ul>
  
- <a href="./about.html">aboutme.html</a>
+ <a href="./aboutme.html">aboutme.html</a>
 
 <hr>
 
@@ -81,8 +82,25 @@
 
 <hr>
 
-<pre>
+
     <h1>Bipartite Graph Check</h1>
+    <blockquote >
+<p>
+    n the mathematical field of graph theory, a bipartite graph (or bigraph) is a graph whose vertices can be divided into two disjoint 
+    and independent sets {\displaystyle U}U and {\displaystyle V}V such that every edge connects a vertex in {\displaystyle U}U to one in 
+    {\displaystyle V}V. Vertex sets {\displaystyle U}U and {\displaystyle V}V are usually called the parts of the graph. Equivalently, a 
+    bipartite graph is a graph that does not contain any odd-length cycles.[1][2]
+
+</p>
+
+
+    </blockquote>
+    
+    
+    <a href=  "https://en.wikipedia.org/wiki/Bipartite_graph">"click here"</a>
+        
+    <pre>
+
     int n;
 vector<vector<int>> adj;
 
@@ -93,7 +111,7 @@ for (int st = 0; st < n; ++st)
  {
     if (side[st] == -1)
      {
-        <blockquote place =  "https://cp-algorithms.com/graph/bipartite-check.html">
+      
            
         q.push(st);
         side[st] = 0;
@@ -114,7 +132,7 @@ for (int st = 0; st < n; ++st)
                     is_bipartite &= side[u] != side[v];
                     
                 }
-            </blockquote>
+            
             }
         }
     }
