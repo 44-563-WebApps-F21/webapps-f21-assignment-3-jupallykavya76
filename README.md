@@ -1,10 +1,3 @@
 # WebApps-F21-Assignment-3
 Assignment 3 - Basic HTML
-<html>
-<head>
-<title>My Self</title>
-</head>
-<body>
-<h1>Jupally Kavya</h1>
-</body>
-</html>
+Hosted at " https://44-563-webapps-f21.github.io/webapps-f21-assignment-3-jupallykavya76/"
